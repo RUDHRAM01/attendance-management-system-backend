@@ -13,11 +13,7 @@ const SubjectSchema = new mongoose.Schema({
     teacher: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Teacher',
-    },
-    students: [{
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Student',
-    }],
+    }
 }, { timestamps: true });
 
 const SubjectModel = mongoose.model('Subject', SubjectSchema);
