@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 
 const AttendanceSchema = new mongoose.Schema({
     date: Date,
+    title: String,
     subject: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Subject',
